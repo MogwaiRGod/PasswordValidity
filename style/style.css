@@ -1,0 +1,32 @@
+body {
+    padding-top: 1%;
+    font-family: Helvetica, Verdana, sans-serif;
+    background: #181717;
+    color: #CED25A;
+    font-size: 12pt;
+    text-align: center;
+}
+
+input {
+    background: #0a0a0a;
+    border-color: #7D8491;
+    height: 25px;
+    width: 30%;
+    color: #C0C5C1;
+    border-radius: 5px;
+}
+
+p {
+    color : #EAF0CE;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul {
+    font-size : 14pt;
+    list-style-type: none;
+    color : #EAF0CE;
+    padding: 0;
+}

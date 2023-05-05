@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Password</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="MogwaiRGod">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Composez un mot de passe</h1>
+    </header>
+
+    <main>
+        <div id="container">
+
+            <input id="iptPw" type="text" placeholder="Entrer un mot de passe"></input>
+            <progress-bar id="pwBar" progression="0"></progress-bar>
+            <p>
+                Score : <span id="score"></span><br>
+                Le mot de passe doit contenir :
+            </p>
+            <ul>
+                <li>3 chiffres</li>
+                <li>6 bas-de-casse</li>
+                <li>3 lettres capitales</li>
+                <li>2 symboles</li>
+            </ul>
+        
+        </div>
+    </main>
+    
+    <script src="js/ProgressBar.js"></script>
+    <script src="js/Password.js"></script>
+    <script>
+        // ajout de la logique à la balise progress-bar
+        window.customElements.define(
+            'progress-bar', 
+            ProgressBar
+        );
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
