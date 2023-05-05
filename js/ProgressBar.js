@@ -57,6 +57,18 @@ class ProgressBar extends HTMLElement {
         return div;
     }
 
+    // fonction faisant incrémenter la barre de progress%
+    triggerProgress(progress) {
+        let newWidth = parseInt(this._shadowRoot.children[0].children[0].style.width) + progress + '%';
+        this._shadowRoot.children[0].children[0].style.width = newWidth;
+    }
+
+    // fonction faisant décrémenter la barre de progress%
+    lowerProgress(progress) {
+        let newWidth = parseInt(this._shadowRoot.children[0].children[0].style.width) - progress + '%';
+        this._shadowRoot.children[0].children[0].style.width = newWidth;
+    }
+
     static get observedAttributes() {
         return ['status'];
     }
