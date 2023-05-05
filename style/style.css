@@ -30,3 +30,7 @@ ul {
     color : #EAF0CE;
     padding: 0;
 }
+
+li {
+    font-weight: bold;
+}

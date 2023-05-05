@@ -7,13 +7,13 @@ iptPw.addEventListener('input', () => {
     score.innerText = iptPwd.score;
 
     // màj des indications sur la page 
-    // (-> passe en gras quand c'est validé, en normal quand c'est plus bon)
+    // (-> passe en normal quand c'est validé, en gras quand c'est plus bon)
     for (let criteria in iptPwd.checked) {
         if(iptPwd.checked[criteria]['checked']) {
-            document.getElementById(criteria).style.fontWeight = 'bold';
+            document.getElementById(criteria).style.fontWeight = 'normal';
         }
         else {
-            document.getElementById(criteria).style.fontWeight = 'normal';
+            document.getElementById(criteria).style.fontWeight = 'bold';
         }
     }
 });
