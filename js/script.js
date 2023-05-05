@@ -4,4 +4,5 @@ let iptPwd = new Password();
 iptPw.addEventListener('input', () => {
     iptPwd.content = iptPw.value;
     iptPwd.checkPasswordBar(pwBar);
+    score.innerText = iptPwd.score;
 });

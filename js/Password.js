@@ -9,6 +9,9 @@ class Password {
          * checked : indique si le critère a déjà été vérifié ou non
          * method : méthode de vérification associée
          */
+        // score de validité du mdp (en %)
+        this.score = 0;
+
         this.checked = {
             checkedDigits: {
                 // par défaut : aucun critère n'a été vérifié
@@ -28,8 +31,7 @@ class Password {
                 method: this.checkSymbols
             }
         };
-        // score de validité du mdp (en %)
-        this.score = 0;
+
     }
 
     // méthode vérifiant entièrement la validité du mdp et mettant à jour une barre de progression entrée en argument
