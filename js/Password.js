@@ -108,7 +108,7 @@ class Password {
     }
     
     checkSymbols(obj) {
-        // regular expression : toutes les lettres capitales, au nombre de 2 ou +
+        // regular expression : tous les symboles, au nombre de 2 ou +
         let regex = /[\$%§£¤\*@&#]{2,}/;
 
         // si le contenu du mdp vérifie la regex
